@@ -66,6 +66,11 @@ function game() {
     }
 }
 
+window.onload = function() { /*this holds back your javascript from loading until all your HTML and CSS has loaded first*/
+    let rock = document.querySelector('.rock');
+    rock.onclick = () => alert('rock');
+};
+
 let playerScore = 0;
 let computerScore = 0;
-game()
+/*game()*/
